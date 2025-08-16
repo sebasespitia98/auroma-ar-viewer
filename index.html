@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AUROMA AR Viewer</title>
-  <link rel="stylesheet" href="style.css" />
-  <script type="module" src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUROMA AR Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>AUROMA AR Viewer</h1>
-  </header>
-  <main>
-    <model-viewer id="viewer" src="model.glb" ar ar-modes="webxr scene-viewer quick-look" 
-      camera-controls environment-image="neutral" auto-rotate>
-    </model-viewer>
-  </main>
-  <footer>
-    <p>AUROMA Estudio - Demo AR Viewer</p>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <header>
+        <h1>AUROMA AR Viewer</h1>
+    </header>
+    <main>
+        <model-viewer id="viewer" src="model.glb" ar ar-modes="webxr scene-viewer quick-look"
+            camera-controls environment-image="neutral" auto-rotate>
+        </model-viewer>
+    </main>
+    <footer>
+        <p>AUROMA Estudio - Demo AR Viewer</p>
+    </footer>
+    <!-- Load model-viewer via jsDelivr CDN, version 4.1.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
 </body>
 </html>
